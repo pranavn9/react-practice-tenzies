@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #0B2434;
+  padding: 20px;
+  font-family: "Karla", sans-serif;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 40px);
+}
+
+.main {
+  background-color: #F5F5F5;
+  height: 400px;
+  width: 500px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.player-select {
+  display: flex;
+}
+
+.title {
+  font-size: 40px;
+  margin: 0;
+}
+
+.instructions {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  margin-top: 0;
+  text-align: center;
+}
+
+.dice-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+}
+
+.die-square {
+  height: 50px;
+  width: 50px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: #FFFFFF;
+}
+
+.die-number {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.roll-button {
+  height: 50px;
+  width: 150px;
+  border: none;
+  border-radius: 6px;
+  background-color: rgb(80, 53, 255);
+  color: #FFFFFF;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.roll-button:active {
+  box-shadow: inset 5px 5px 10px -3px rgb(73 72 79 / 70%)
+}
+
+.held {
+  background-color: #36ABAD;
+  color: #FFFFFF;
+}
+
+.not-held {
+  background-color: #FFFFFF;
+  color: #000000;
+}
+
+.canvas {
+  width: 500px;
+  top: 50%!important;
+  left: 50%!important;
+  transform: translate(-50%, -50%);
+  margin-top: -81px;
+}
