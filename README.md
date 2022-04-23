@@ -9,4 +9,3 @@ A childhood favorite, built with React, with two player support and a scorecard 
 
 ## Steps to enjoy
 - Enjoy!
-- 
